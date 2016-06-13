@@ -10,7 +10,7 @@ title: Unpaid Opportunities
 description: > # this means to ignore newlines until "baseurl:"
   Are you highly qualified and willing to work for free?
 baseurl: "/unpaid-opportunity" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://erickpeirson.github.io" # the base hostname & protocol for your site
 github_username:  kroppheather
 github_username_2:  erickpeirson
 
