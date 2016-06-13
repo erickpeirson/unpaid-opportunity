@@ -10,7 +10,7 @@ layout: default
         {% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}
         | Source: <a class="text-muted" href="{{ page.source }}">{{ page.source }}</a>
     </p>
-    <div class="container" styl="margin-top: 15px;">
+    <div class="container">
         <div>
             {% for tag in page.categories %}<span class="label label-warning" style="margin-right: 10px;">{{ tag }}</span>{% endfor %}
         </div>
@@ -19,7 +19,7 @@ layout: default
 
   </header>
 
-  <div class="post-content" itemprop="articleBody">
+  <div class="post-content" itemprop="articleBody"  style="margin-top: 15px;">
     {{ content }}
   </div>
 
