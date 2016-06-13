@@ -16,6 +16,7 @@ layout: default
         <p>
             {{ post.summary }}
         </p>
+        <a class="pull-right" href="{{ post.url | prepend: site.baseurl }}">Read more...</a>
         </div>
     {% endfor %}
 </div>
