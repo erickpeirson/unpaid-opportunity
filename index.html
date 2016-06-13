@@ -4,23 +4,22 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Recent Job Postings</h1>
+    <h1 class="page-heading">Recent Job Postings</h1>
 
-  <div class="post-list">
-    {% for post in site.posts %}
-      <div>
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-        <span class="text-warning">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <p>
-            {{ post.summary }}
-        </p>
-        <a class="pull-right" href="{{ post.url | prepend: site.baseurl }}">Read more...</a>
+    <div class="post-list">
+        {% for post in site.posts %}
+        <div>
+            <h2>
+                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </h2>
+            <span class="text-warning">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <p>
+                {{ post.summary }}
+                <a class="pull-right" href="{{ post.url | prepend: site.baseurl }}">Read more...</a>
+            </p>
+
         </div>
-    {% endfor %}
-</div>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+        {% endfor %}
+    </div>
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 </div>
